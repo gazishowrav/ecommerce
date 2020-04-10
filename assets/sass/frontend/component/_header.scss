@@ -1,0 +1,58 @@
+// header
+
+.header {
+	padding: 2rem 0;
+	transition: all 0.3s ease;
+	
+	.header-icon {
+		span {
+			font-size: 23px;
+			padding: 1rem .5rem;
+			color: #fff;
+		}
+	}
+	.header-content {
+		.nav-item {
+			.nav-link {
+				font-family: $font-family-poppins;
+				font-size: 14px;
+				font-weight: 500;
+				text-transform: uppercase;
+				padding: .5rem 1.5rem;
+				color: #fff;
+			}
+		}
+		.logo {
+			.logo-light {
+				display: block;
+			}
+			.logo-black {
+				display: none;
+			}
+		}
+	}
+
+	&:hover {
+		background: #fff;
+		.header-icon {
+			span {
+				color: #000;
+			}
+		}
+		.header-content {
+			.nav-item {
+				.nav-link {
+					color: #000;
+				}
+			}
+			.logo {
+				.logo-light {
+					display: none;
+				}
+				.logo-black {
+					display: block;
+				}
+			}
+		}
+	}
+}
