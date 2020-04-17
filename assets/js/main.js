@@ -10,6 +10,16 @@ $(window).scroll(function() {
     }
 });
 
+// Search
+
+$("#open-search").click(function(){
+  $(".web-search").addClass("show");
+});
+
+$("#close-search").click(function(){
+  $(".web-search").removeClass("show");
+});
+
 // Slider
 
 $('.carousel').carousel({
@@ -25,3 +35,4 @@ $("#open-menu").click(function(){
 $("#close-menu").click(function(){
   $(".mobile-menu").removeClass("show");
 });
+

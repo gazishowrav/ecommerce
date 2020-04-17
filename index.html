@@ -16,26 +16,17 @@
 			<!--web view-->
 			<div class="web-view">
 				<div class="row align-items-center">
-					<div class="header-icon header-icon-left col-xs-3 col-sm-3 col-md-3 col-lg-2">
-						<a href="#" data-toggle="modal" data-target="#searchModal"><span class="mdi mdi-magnify"></span></a>
-					</div>
-					<div class="header-content col-xs-6 col-sm-6 col-md-6 col-lg-8">
+					<div class="header-content col-xs-6 col-sm-6 col-md-6 col-lg-10">
 						<div class="row align-items-center">
-							<div class="col-lg-5">
+							<div class="logo col-xs-3 col-sm-3 col-md-3 col-lg-2">
+								<img class="logo-light" src="./assets/img/logo-light.svg" alt="">
+								<img class="logo-black" src="./assets/img/logo.svg" alt="">
+							</div>
+							<div class="col-lg-8">
 								<ul class="nav justify-content-end primary-menu">
 									<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
 									<li class="nav-item"><a href="products.html" class="nav-link">Shop</a></li>
 									<li class="nav-item"><a href="products.html" class="nav-link">Future</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-2">
-								<div class="logo">
-									<img class="logo-light" src="./assets/img/logo-light.svg" alt="">
-									<img class="logo-black" src="./assets/img/logo.svg" alt="">
-								</div>
-							</div>
-							<div class="col-lg-5">
-								<ul class="nav secondary-menu">
 									<li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
 									<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
 									<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
@@ -45,6 +36,9 @@
 					</div>
 					<div class="header-icon header-icon-right text-right col-xs-3 col-sm-3 col-md-3 col-lg-2">
 						<div class="d-flex align-items-center justify-content-end">
+							<a href="#" id="open-search">
+								<span class="mdi mdi-magnify"></span>
+							</a>
 							<a href="#" class="d-flex align-items-center justify-content-center">
 								<span class="mdi mdi-wallet-giftcard"></span>
 								<sup class="badge badge-pill badge-dark ml-n2">Wallet</sup>
@@ -56,6 +50,16 @@
 						</div>
 					</div>
 				</div>
+				<!--Search box-->
+				<div class="web-search">
+					<button type="button" id="close-search"><span class="mdi mdi-close"></span></button>
+			        <form class="search-box d-flex">
+		        		<button type="submit" class="search-submit"><i class="mdi mdi-magnify"></i></button>
+			        	<input type="text" name="s" placeholder="Search" class="search-field" autocomplete="off">
+			        	<button type="reset" class="search-reset"><i class="mdi mdi-close"></i></button>
+			        </form>
+				</div>
+				<!--/Search box-->
 			</div>
 			<!--/web view-->
 			<!--mobile view-->
@@ -374,31 +378,6 @@
 		</div>
 	</div>
 	<!--/mobile footer cart-->
-	<!--Search Modal-->
-	<div class="search-modal">
-		<div class="modal fade border-0" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header border-0">
-		        <h3 class="modal-title" id="exampleModalLabel">Search</h3>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span class="mdi mdi-close"></span>
-		        </button>
-		      </div>
-		      <div class="modal-body border-0">
-		        <form class="search-fields pt-5 mt-5">
-		        	<div class="d-flex">
-		        		<button type="submit" class="search-submit"><i class="mdi mdi-magnify"></i></button>
-			        	<input type="text" name="s" placeholder="Search" class="search-field" autocomplete="off">
-			        	<button type="reset" class="search-reset"><i class="mdi mdi-close"></i></button>
-		        	</div>
-		        </form>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
-	<!--/Search Modal-->
 	<!--cart Modal-->
 	<div class="cart-modal">
 		<div class="modal fade border-0" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
