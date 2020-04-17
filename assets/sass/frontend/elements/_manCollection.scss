@@ -155,3 +155,42 @@
 		}
 	}
 }
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+	.man-collection {
+		.grid-box {
+			display: grid;
+			height: 100%;
+			grid-template-rows: repeat(1, 1fr);
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 8px;
+			.grid-item {
+				position: relative;
+				overflow: hidden;
+				
+				&.tall {
+					grid-row: span 1;
+					grid-column: span 4;
+				}
+				&.medium {
+					grid-row: span 1;
+					grid-column: span 3;
+				}
+				&.small {
+					grid-row: span 1;
+					grid-column: span 4;
+					.grid-box-small {
+					    .grid-item-small {
+					    	position: relative;
+					    	overflow: hidden;
+					    	grid-row: span 1;
+					    	grid-column: span 3;
+					    }
+					}
+				}
+			}
+		}
+	}
+}

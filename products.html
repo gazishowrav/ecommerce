@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SOBER | Welcome</title>
+	<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+	<!--header-->
+	<header class="header fixed-top">
+		<div class="container-wrapper">
+			<!--web view-->
+			<div class="web-view">
+				<div class="row align-items-center">
+					<div class="header-icon header-icon-left col-xs-3 col-sm-3 col-md-3 col-lg-2">
+						<a href="#" data-toggle="modal" data-target="#searchModal"><span class="mdi mdi-magnify"></span></a>
+					</div>
+					<div class="header-content col-xs-6 col-sm-6 col-md-6 col-lg-8">
+						<div class="row align-items-center">
+							<div class="col-lg-5">
+								<ul class="nav justify-content-end primary-menu">
+									<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+									<li class="nav-item"><a href="products.html" class="nav-link">Shop</a></li>
+									<li class="nav-item"><a href="products.html" class="nav-link">Future</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-2">
+								<div class="logo">
+									<img class="logo-light" src="./assets/img/logo-light.svg" alt="">
+									<img class="logo-black" src="./assets/img/logo.svg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<ul class="nav secondary-menu">
+									<li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="header-icon header-icon-right text-right col-xs-3 col-sm-3 col-md-3 col-lg-2">
+						<div class="d-flex align-items-center justify-content-end">
+							<a href="#" class="d-flex align-items-center justify-content-center">
+								<span class="mdi mdi-wallet-giftcard"></span>
+								<sup class="badge badge-pill badge-dark ml-n2">Wallet</sup>
+							</a>
+							<a href="#" data-toggle="modal" data-target="#cartModal" class="d-flex align-items-center justify-content-center">
+								<span class="mdi mdi-cart-outline"></span>
+								<sup class="badge badge-pill badge-dark ml-n2">0</sup>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/web view-->
+			<!--mobile view-->
+			<div class="mobile-view">
+				<div class="mobile-header">
+					<div class="row">
+						<div class="col-3">
+							<a href="#" id="open-menu"><i class="mdi mdi-menu"></i></a>
+						</div>
+						<div class="col-6">
+							<div class="logo">
+								<img class="logo-light" src="./assets/img/logo-light.svg" alt="">
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="d-flex align-items-center justify-content-end">
+								<a href="#" class="d-flex align-items-center justify-content-center">
+									<span class="mdi mdi-wallet-giftcard"></span>
+									<sup class="badge badge-pill badge-dark ml-n2">Wallet</sup>
+								</a>
+								<a href="#" class="d-flex align-items-center justify-content-center">
+									<span class="mdi mdi-cart-outline"></span>
+									<sup class="badge badge-pill badge-dark ml-n2">0</sup>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mobile-menu">
+					<a href="#" id="close-menu"><i class="mdi mdi-close"></i></a>
+					<div class="mobile-search">
+						<input type="search" placeholder="Search">
+						<span class="mdi mdi-magnify"></span>
+					</div>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="products.html" class="nav-link">Shop</a>
+						</li>
+						<li class="nav-item">
+							<a href="products.html" class="nav-link">Future</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Pages</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/mobile view-->
+		</div>
+	</header>
+	<!--/header-->
+	<!--main-->
+	<main class="main">
+		<!--page banner-->
+		<div class="page-banner">
+			<img src="./assets/img/slider/slider1.jpg" alt="">
+			<div class="banner-caption">
+				<h3>Products</h3>
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Products</li>
+				  </ol>
+				</nav>
+			</div>
+		</div>
+		<!--/page banner-->
+		<!--products filter-->
+		<div class="product-filter pt-5">
+			<div class="container-wrapper">
+				<div class="row">
+					<div class="col-lg-7">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="allProducts-tab" data-toggle="tab" href="#allProducts" role="tab" aria-controls="allProducts" aria-selected="true">All Products</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="hotProducts-tab" data-toggle="tab" href="#hotProducts" role="tab" aria-controls="hotProducts" aria-selected="false">Hot Products</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="newProducts-tab" data-toggle="tab" href="#newProducts" role="tab" aria-controls="newProducts" aria-selected="false">New Products</a>
+						  </li>
+						</ul>
+					</div>
+					<div class="col-lg-5">
+						<ul class="nav filter-menu">
+							<li class="nav-item"><a href="#" class="nav-link">Showing 1–15 of 61 products</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span class="mdi mdi-grid"></span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span class="mdi mdi-grid-large"></span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span class="mdi mdi-filter pr-1"></span> Filter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/products filter-->
+		<!--products-->
+		<div class="products py-5">
+			<div class="container-wrapper">
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="allProducts" role="tabpanel" aria-labelledby="allProducts-tab">
+				  	<div class="row">
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/1.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/2.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/3.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/4.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/5.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/6.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/7.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/8.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane fade" id="hotProducts" role="tabpanel" aria-labelledby="hotProducts-tab">
+				  	<div class="row">
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/5.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/6.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/7.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-6 col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/8.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane fade" id="newProducts" role="tabpanel" aria-labelledby="newProducts-tab">
+				  	<div class="row">
+				  		<div class="col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/1.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/2.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/3.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  		<div class="col-lg-3">
+				  			<a href="#" data-toggle="modal" data-target="#productsModal">
+				  				<div class="product-card">
+				  					<div class="product-img">
+				  						<img src="./assets/img/products/4.jpg" alt="">
+				  						<div class="product-cart">
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-cart-outline"></span></a>
+				  							<a href="#" class="cart-btn"><span class="mdi mdi-heart-outline"></span></a>
+				  						</div>
+				  					</div>
+				  					<div class="product-content">
+				  						<a href="#"><h3>Cashmere Hat</h3></a>
+				  						<strong>$35.00</strong>
+				  					</div>
+				  				</div>
+				  			</a>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+				
+			</div>
+		</div>
+		<!--/products-->
+		<!--newsletter-->
+		<div class="newsletter pt-5 mb-5">
+			<div class="container-wrapper">
+				<h3 class="text-center">Man Collections</h3>
+				<p class="text-center">Get timely updates from your favorite products</p>
+				<div class="newslwtter-body">
+					<form class="form-fields">
+						<input class="email" type="email" name="EMAIL" placeholder="Enter your email address" required=""> 
+						<input type="submit" value="Subscribe" class="form-btn">
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--/newsletter-->
+	</main>
+	<!--/main-->
+	<!--footer-->
+	<footer class="footer">
+		<div class="container-wrapper">
+			<div class="row align-items-center">
+				<div class="col-lg-2">
+					<div class="copyright"> ©2020 Sober</div>
+				</div>
+				<div class="col-lg-5">
+					<ul class="nav footer-menu">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">FAQs</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-5">
+					<ul class="nav justify-content-end social-menu">
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="mdi mdi-facebook"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="mdi mdi-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="mdi mdi-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="mdi mdi-youtube"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="mdi mdi-google"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/footer-->
+	<!--mobile footer cart-->
+	<div class="mobile-footer-cart">
+		<div class="d-flex align-items-center justify-content-center">
+			<a href="#" class="d-flex align-items-center justify-content-center">
+				<span class="mdi mdi-wallet-giftcard"></span>
+				<sup class="badge badge-pill badge-success ml-n2">Wallet</sup>
+			</a>
+			<a href="#" class="d-flex align-items-center justify-content-center">
+				<span class="mdi mdi-cart-outline"></span>
+				<sup class="badge badge-pill badge-success ml-n2">0</sup>
+			</a>
+			<a href="#" class="d-flex align-items-center justify-content-center btn btn-sm btn-outline-dark shadow-none">
+				Checkout<span class="mdi mdi-arrow-right pl-1"></span>
+			</a>
+		</div>
+	</div>
+	<!--/mobile footer cart-->
+	<!--Search Modal-->
+	<div class="search-modal">
+		<div class="modal fade border-0" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header border-0">
+		        <h3 class="modal-title" id="exampleModalLabel">Search</h3>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span class="mdi mdi-close"></span>
+		        </button>
+		      </div>
+		      <div class="modal-body border-0">
+		        <form class="search-fields pt-5 mt-5">
+		        	<div class="d-flex">
+		        		<button type="submit" class="search-submit"><i class="mdi mdi-magnify"></i></button>
+			        	<input type="text" name="s" placeholder="Search" class="search-field" autocomplete="off">
+			        	<button type="reset" class="search-reset"><i class="mdi mdi-close"></i></button>
+		        	</div>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!--/Search Modal-->
+	<!--cart Modal-->
+	<div class="cart-modal">
+		<div class="modal fade border-0" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header border-0">
+		        <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span class="mdi mdi-close"></span>
+		        </button>
+		      </div>
+		      <div class="modal-body border-0">
+		        <ul class="nav nav-tabs cart-tab justify-content-center" id="myTab" role="tablist">
+		          <li class="nav-item">
+		            <a class="nav-link active" id="shopingCart-tab" data-toggle="tab" href="#shopingCart" role="tab" aria-controls="shopingCart" aria-selected="true">Shoping Cart <sup class="badge badge-dark">3</sup></a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" id="wishlist-tab" data-toggle="tab" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="false">Wishlist <sup class="badge badge-dark">0</sup></a>
+		          </li>
+		      </ul>
+		        <div class="tab-content" id="myTabContent">
+		          <div class="tab-pane fade show active" id="shopingCart" role="tabpanel" aria-labelledby="shopingCart-tab">
+		          	<table class="table cart-table">
+		          		<tr>
+		          			<td class="products-img">
+		          				<img src="./assets/img/products/1.jpg" alt="">
+		          			</td>
+		          			<td class="products-title">Cotton Hat</td>
+		          			<td class="products-quantiy">Qty: 1</td>
+		          			<td class="products-price">$40.00</td>
+		          			<td class="products-remove">
+		          				<a href="#"><span class="mdi mdi-close"></span></a>
+		          			</td>
+		          		</tr>
+		          		<tr>
+		          			<td class="products-img">
+		          				<img src="./assets/img/products/2.jpg" alt="">
+		          			</td>
+		          			<td class="products-title">Cotton Hat</td>
+		          			<td class="products-quantiy">Qty: 1</td>
+		          			<td class="products-price">$40.00</td>
+		          			<td class="products-remove">
+		          				<a href="#"><span class="mdi mdi-close"></span></a>
+		          			</td>
+		          		</tr>
+		          		<tr>
+		          			<td class="products-img">
+		          				<img src="./assets/img/products/3.jpg" alt="">
+		          			</td>
+		          			<td class="products-title">Cotton Hat</td>
+		          			<td class="products-quantiy">Qty: 1</td>
+		          			<td class="products-price">$40.00</td>
+		          			<td class="products-remove">
+		          				<a href="#"><span class="mdi mdi-close"></span></a>
+		          			</td>
+		          		</tr>
+		          		<tr>
+		          			<td class="products-img">
+		          				<img src="./assets/img/products/4.jpg" alt="">
+		          			</td>
+		          			<td class="products-title">Cotton Hat</td>
+		          			<td class="products-quantiy">Qty: 1</td>
+		          			<td class="products-price">$40.00</td>
+		          			<td class="products-remove">
+		          				<a href="#"><span class="mdi mdi-close"></span></a>
+		          			</td>
+		          		</tr>
+		          	</table>
+		          	<div class="row justify-content-center">
+		          		<div class="col-lg-4">
+		          			<a href="#" class="btn btn-lg btn-dark rounded-0 py-3 px-5">$ 675.00 | Checkout</a>
+		          		</div>
+		          	</div>
+		          </div>
+		          <div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+		          	<p class="text-center text-muted pt-5 mt-5">Your wishlist is currently empty.</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!--/cart Modal-->
+	<!--products Modal-->
+	<div class="products-modal">
+		<div class="modal fade" id="productsModal" tabindex="-1" role="dialog" aria-labelledby="productsModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!--/products Modal-->
+	<!--js-->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/popper.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/owl.carousel.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
