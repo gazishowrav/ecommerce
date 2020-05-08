@@ -30163,6 +30163,10 @@ main {
       .page-banner .banner-caption .breadcrumb .breadcrumb-item a {
         color: #f4f4f4; }
 
+.products-details input {
+  max-width: 50px;
+  text-align: center; }
+
 .slider {
   height: 100vh; }
   .slider .carousel-item img {
